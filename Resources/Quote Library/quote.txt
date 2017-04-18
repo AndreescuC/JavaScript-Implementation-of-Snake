@@ -1,0 +1,1 @@
+This is a sample indicating strings length6This is the second quote and it is supposed to be meaningfull6This is a much shorter quote6Really short quote6The longest quote so far; keep in mind that this is a placeholder but I consider leaving it in the final version

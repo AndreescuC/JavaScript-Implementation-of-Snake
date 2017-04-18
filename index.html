@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="customise.css">
+    <link rel="stylesheet" type="text/css" href="inGame.css">
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="init.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="transitions.js" type="text/javascript"></script>
+    <script src="snake.js" type="text/javascript"></script>
+    <script src="aux2.js" type="text/javascript"></script>
+    <script src="pray.js" type="text/javascript"></script>
+    <script src="aux1.js" type="text/javascript"></script>
+    <script src="drawing.js" type="text/javascript"></script>
+    <script src="myColor.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top; transition: .9s ease; border-radius: 30px} </style>
+  </head>
+  
+  <body  background="silly_snake.jpg" onload="init1();">
+  
+    <button class="button button1" id="Play" >Play</button>
+    <button class="button button2" id="HighScores" >HighScores</button>
+    <button class="button button3" id="Extra" >Extra</button>
+    <button class="button button4" id="Return1" >Return</button>
+    <button class="button button5" id="Return2" >Return</button>
+    
+    <fieldset class="description" id="extra" background="150">
+
+        <textarea readonly id="info" class="no_focus" background="255" >
+          At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies
+        </textarea>
+        <br><br><br>
+
+        <img src="/Resources/Menu/Customise.png" id="customise" class="customise_focus" />
+        
+        <form style="Snake Shape" class="shape_esc" id="shape_esc"><b>Snake Shape</b><br><br>
+          <div class="cc-selector">
+            <input id="squ" type="radio" name="shape_rb" value="squ" checked/>
+            <label class="drinkcard-cc squ" for="squ"></label>
+            <br>
+            <input id="tri" type="radio" name="shape_rb" value="tri" />
+            <label class="drinkcard-cc tri" for="tri"></label>
+            <br>
+            <input id="cir" type="radio" name="shape_rb" value="cir" />
+            <label class="drinkcard-cc cir" for="cir"></label>
+          </div>
+        </form>
+
+        <form style="Snake Color" class="color_esc" id="color_esc"><b>Snake Color</b><br><br>
+          <div class="cc-selector">
+            <input id="red_esc" type="radio" name="color_rb" value="red_esc" />
+            <label class="drinkcard-cc red_esc" for="red_esc"></label>
+            <br>
+            <input id="green_esc" type="radio" name="color_rb" value="green_esc" />
+            <label class="drinkcard-cc green_esc" for="green_esc"></label>
+            <br>
+            <input id="blue_esc" type="radio" name="color_rb" value="blue_esc" />
+            <label class="drinkcard-cc blue_esc" for="blue_esc"></label>
+          </div>
+        </form>
+        <!--
+       <form style="Snake Style" class="style_esc" id="style_esc"><b>Snake Style</b><br><br>
+          <div class="cc-selector">
+            <input id="squ" type="radio" name="style_rb" value="squ" />
+            <label class="drinkcard-cc squ" for="squ"></label>
+            <br>
+            <input id="tri" type="radio" name="style_rb" value="tri" />
+            <label class="drinkcard-cc tri" for="tri"></label>
+            <br>
+            <input id="cir" type="radio" name="style_rb" value="cir" />
+            <label class="drinkcard-cc cir" for="cir"></label>
+          </div>
+        </form>
+        -->
+        <form style="Pray Style" class="pstyle" id="pstyle"><b>Pray Style</b><br><br>
+          <div class="cc-selector">
+            <input id="red_white" type="radio" name="pstyle" value="red_white" checked/>
+            <label class="drinkcard-cc red_white" for="red_white"></label>
+            <br>
+            <input id="green_yellow" type="radio" name="pstyle" value="green_yellow" />
+            <label class="drinkcard-cc green_yellow" for="green_yellow"></label>
+            <br>
+            <input id="navy_brown" type="radio" name="pstyle" value="navy_brown" />
+            <label class="drinkcard-cc navy_brown" for="navy_brown"></label>
+          </div>
+        </form>
+    </fieldset>
+  
+    <fieldset class="HallOfFame" id="scores" background="150">
+      <embed  src="fileinput.txt" id="list" class="no_focus">
+      <img src="/Resources/Menu/Trophy.png" id="trophy" class="trophy_focus" />
+    </fieldset>
+    
+    <fieldset class="in_game" id="in_game" >
+      <textarea readonly id="controls" class="no_focus" background="255" >Controls</textarea>
+      <textarea readonly id="quote" class="no_focus" background="255" >Your daily dose of inspiration</textarea>
+
+
+    <textarea readonly rows="1" style="height:1em;" id="quote_body" class="no_focus"></textarea>
+      
+      <img src="/Resources/Game/arrow_keys.png" id="arrow_keys" class="no_focus" />
+    </fieldset>
+
+  </body>
+</html>

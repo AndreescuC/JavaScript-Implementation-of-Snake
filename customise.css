@@ -1,0 +1,126 @@
+.shape_esc_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    height: 65%;
+}
+.shape_esc
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    height: 65%;
+    display: none;
+}
+.color_esc
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 25%;
+    width: 20%;
+    height: 65%;
+    display: none;
+}
+.color_esc_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 25%;
+    width: 20%;
+    height: 65%;
+}
+.style_esc
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 45%;
+    width: 20%;
+    height: 65%;
+    display: none;
+}
+.style_esc_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 45%;
+    width: 20%;
+    height: 65%;
+}
+.pstyle
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 70%;
+    width: 20%;
+    height: 65%;
+    display: none;
+}
+.pstyle_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 30%;
+    left: 70%;
+    width: 20%;
+    height: 65%;
+}
+
+.squ{background-image:url("/Resources/Radio/square.png");}
+.tri{background-image:url("/Resources/Radio/triangle.png");}
+.cir{background-image:url("/Resources/Radio/circle.png");}
+
+.red_esc{background-image:url("/Resources/Radio/red.png");}
+.green_esc{background-image:url("/Resources/Radio/green.png");}
+.blue_esc{background-image:url("/Resources/Radio/blue.png");}
+
+.red_white{background-image:url("/Resources/Radio/red_white.png");}
+.green_yellow{background-image:url("/Resources/Radio/green_yellow.png");}
+.navy_brown{background-image:url("/Resources/Radio/navy_brown.png");}
+
+.cc-selector input
+{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.cc-selector input:active +.drinkcard-cc
+{
+  opacity: .9;
+}
+.cc-selector input:checked +.drinkcard-cc
+{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc
+{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:30px;height:30px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8)  opacity(.2);
+       -moz-filter: brightness(1.8)  opacity(.2);
+            filter: brightness(1.8)  opacity(.2);
+}
+.drinkcard-cc:hover
+{
+    -webkit-filter: brightness(1.2)  opacity(.8);
+       -moz-filter: brightness(1.2)  opacity(.8);
+            filter: brightness(1.2)  opacity(.8);
+}

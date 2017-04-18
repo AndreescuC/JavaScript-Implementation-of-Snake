@@ -1,0 +1,104 @@
+.HallOfFame
+{
+  position:absolute;
+  transition: .9s ease;
+  top: 53%;
+  left: 50%;
+  height: 52%;
+  width: 47.5%;
+  background: rgba(121, 138, 113, 0.8);
+  border-style: solid;
+  border-color: #004d00;
+  border-radius: 30px;
+  border-width: 4px;
+}
+.HallOfFame_focus
+{
+  position:absolute;
+  transition: .9s ease;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 47.5%;
+  background: rgba(121, 138, 113, 0.9);
+  border-style: solid;
+  border-color: #004d00;
+  border-radius: 30px;
+  border-width: 4px;
+}
+.description
+{
+  position:absolute;
+  transition: .9s ease;
+  top: 0%;
+  left: 50%;
+  height: 49.5%;
+  width: 47.5%;
+  background: rgba(121, 138, 113, 0.8);
+  border-style: solid;
+  border-color: #004d00;
+  border-radius: 30px;
+  border-width: 4px;
+}
+.description_focus
+{
+  position:absolute;
+  transition: .9s ease;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 48%;
+  background: rgba(121, 138, 113, 0.9);
+  border-style: solid;
+  border-color: #004d00;
+  border-radius: 30px;
+  border-width: 4px;
+}
+
+.no_focus
+{
+    display: none;
+}
+.info_focus
+{
+    background: transparent;
+    border: none;
+    font-size: 0.95em;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    position:absolute;
+    transition: .5s ease;
+    top: 5%;
+    left: 2.5%;
+    width: 90%;
+    height: 20%;
+}
+.customise_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 0%;
+    left: 22.5%;
+    width: 55%;
+    height: 100%;
+}
+.customise
+{
+    position:absolute;
+    transition: .5s ease;
+    display: none;
+}
+.trophy_focus
+{
+    position:absolute;
+    transition: .5s ease;
+    top: 0%;
+    left: 22.5%;
+    width: 55%;
+    height: 100%;
+}
+.trophy
+{
+    position:absolute;
+    transition: .5s ease;
+    display: none;
+}
